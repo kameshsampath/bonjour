@@ -1,0 +1,4 @@
+# OpenShift
+#https://hub.docker.com/r/ryanj/centos7-s2i-nodejs/
+FROM ryanj/centos7-s2i-nodejs
+EXPOSE 8080

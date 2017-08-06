@@ -18,14 +18,14 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const api = require('./lib/api');
-const tracingConfiguration = require('./lib/tracing');
+//const tracingConfiguration = require('./lib/tracing');
 
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public/swagger')));
 
 // tracing initialization
-tracingConfiguration.init(app);
+//tracingConfiguration.init(app);
 
 // Create a session-store to be used by both the express-session
 // middleware and the keycloak middleware.
